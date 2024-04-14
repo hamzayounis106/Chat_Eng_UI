@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hello Pete Interface</title>
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne&display=swap">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="p-0 m-0">
+  <!-- Full body gradient bg  layer  -->
+  <!-- <div id="bg-grad"
+    class="w-full h-[100%] sm:h-screen fixed top-0 flex flex-col justify-evenly items-center text-center bg-gradient-to-r from-white to-blue-700 z-[200]">
+  </div> -->
+  <div id="bg-grad"
+    class=" transition-all duration-200 ease-in w-full h-[100%] sm:h-screen fixed top-0 flex flex-col justify-evenly items-center text-center bg-gradient-to-r from-[#39002B] to-[#0E041C] z-[200]  ">
+  </div>
+  <!-- everythung wrapper  -->
+  <div class="h-screen">
+    <!-- Header section -->
+    <header class="z-[400] relative flex justify-between items-center py-7 px-10 w-full">
+      <div class="left_side_header flex-1">
+        <ul class="flex text-yellow-50  gap-x-10  justify-start">
+          <li class=" black_text hover:underline transition-all duration-300 cursor-pointer ease-in hover:scale-90">Home
+          </li>
+          <li class=" black_text hover:underline transition-all duration-300 cursor-pointer ease-in hover:scale-90">
+            <a href="./container.html">Container</a>
+          </li>
+          <li class=" black_text hover:underline transition-all duration-300 cursor-pointer ease-in hover:scale-90">
+            <a href="#about">About</a></li>
+
+          <li class=" black_text hover:underline transition-all duration-300 cursor-pointer ease-in hover:scale-90">Blog
+          </li>
+          <li class=" black_text hover:underline transition-all duration-300 cursor-pointer ease-in hover:scale-90">
+            contact</li>
+        </ul>
+      </div>
+      <!-- <div class="flex-1 flex justify-center">
+        <img src="../images/helloPete.png"
+          class="max-w-[90px] w-full hover:underline transition-all duration-300 cursor-pointer ease-in hover:scale-90"
+          alt="">
+      </div> -->
+      <div class="flex-1 flex  justify-end">
+        <button id="login_btn"
+          class="hover:scale-90 transition-transform duration-500 ease  bg-gradient-to-r from-[#c48db6] to-[#625377] text-yellow-50 px-6  font-medium rounded-md text-[17px] py-1 drop-shadow-2xl shadow-md shadow-[#685088]">Log
+          in</button>
+      </div>
+    </header>
+
+
+
+
+
+    <div class=" h-[80vh] w-[100%] flex justify-center items-center  relative">
+      <div
+        class="m-0 p-0 absolute w-[98%] h-[98%] hero_wrapper bg-[#6850883b] flex justify-center items-center  z-[1000]">
+
+
+        <div
+          class=" flex-1 text-white font-semibold px-8 text-8xl bg_image_header_fake  w-[100%] h-[100%]   top-0 flex flex-col justify-center py-9 items-center text-center  bg-top bg-contain  bg-no-repeat  ">
+
+          <div
+            class="z-[400] text-white  px-8  mb-2 w-[100%] font-semibold text-center flex items-center-center flex-col">
+            <h2 class="tracking-wider leading-1 text-6xl black_text ">The AI companion<br> who cares</h2>
+            <p
+              class=" tracking-wide leading-3 pt-10 z-[400] black_text text-white   text-2xl mb-2  font-semibold text-center ">
+              Always here to listen and
+              talk.</p>
+            <p
+              class=" tracking-wide leading-3 pt-2 z-[400] black_text text-white   text-2xl mb-2  font-semibold text-center ">
+              Always on your side.</p>
+          </div>
+          <div class="flex justify-center gap-y-3 gap-x-6 sm:gap-9 mt-4 flex-wrap">
+            <a href="#speaking-section"
+              class="font-semibold text-[18px] drop-shadow-2xl shadow-md shadow-[#685088] text-[#000000] hover:bg-[#9720209a] hover:translate-y-2 transition-transform duration-500 ease   bg-gradient-to-r from-[#fcf3fa] to-[#bba6da] z-[200]  px-10 py-2  rounded-[7px]">
+              Start Now
+            </a>
+
+          </div>
+        </div>
+        <div class="flex-1  z-[200]  flex justify-center items-center h-screen w-full"> <img class=" "
+            src="../images/pete-removebg-preview.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="speaking-section" class="old_stuff relative z-[300] mt-28 mb-10">
+    <div class="bgimage"></div>
+    <div class="bgimage_overlay"></div>
+    <div class="sections_wrapper">
+      <div class="left_wrapper">
+
+        <div class="voice-interface">
+          <div class="logo_round">
+            <img src="../images/helloPete.png" id="change" alt="logo_round" />
+          </div>
+          <p class="listening2">Got questions? I'm all ears!</p>
+          <div class="sound-wave">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+
+          <div class="lisne">
+            <img src="../images/mic.jpg" alt="Microphone" class="microphone" />
+            <p class="listening">Listening...</p>
+          </div>
+          <div class="message-input">
+            <input type="text" id="messageInput" placeholder="Type your message" />
+            <button id="sendMessageButton"
+              class="font-semibold text-[18px] drop-shadow-2xl shadow-md shadow-[#685088] text-[#000000] hover:bg-[#9720209a] hover:translate-y-2 transition-transform duration-500 ease   bg-gradient-to-r from-[#fcf3fa] to-[#bba6da] z-[200]  px-10 py-2  rounded-[7px]">Send</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="right_wrapper justify-center items-center">
+        <!-- <div class="response_footer">
+          <img
+            src="../images/pete-removebg-preview.png"
+            class="pete_image"
+            alt=""
+            srcset=""
+          />
+        </div> -->
+        <div class="response_wrapper">
+          <div id="responseContainer">
+            <p>Check for response inside the response container.</p>
+          </div>
+          <button id="clearButton"
+            class="font-semibold text-[18px] drop-shadow-2xl shadow-md shadow-[#685088] text-[#000000] hover:bg-[#9720209a] hover:translate-y-2 transition-transform duration-500 ease   bg-gradient-to-r from-[#fcf3fa] to-[#bba6da] z-[200]  px-10 py-2  rounded-[7px]">Clear</button>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+    <div id="about"
+      class="m-0 p-0 absolute w-[98%] h-[98%] hero_wrapper  flex justify-center items-center  z-[1000]">
+
+
+      <div
+        class=" flex-1 text-white  px-8 text-8xl bg_image_header_fake  w-[100%] h-[100%]   top-0 flex flex-col justify-center py-9 items-center text-center  bg-top bg-contain  bg-no-repeat  ">
+
+        <div
+          class="z-[400] text-white  px-8  mb-2 w-[100%]  text-center flex items-center-center flex-col">
+          <h2 class="tracking-wider leading-1 text-6xl black_text font-semibold ">About Us</h2>
+          <p
+            class=" tracking-wide leading-[100%] pt-10 z-[400] black_text text-white   text-xl mb-2   text-center ">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis atque dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab harum debitis?</p>
+   
+        </div>
+        <div class="flex justify-center gap-y-3 gap-x-6 sm:gap-9 mt-4 flex-wrap">
+          <a href="#"
+            class="font-semibold text-[18px] drop-shadow-2xl shadow-md shadow-[#685088] text-[#000000] hover:bg-[#9720209a] hover:translate-y-2 transition-transform duration-500 ease   bg-gradient-to-r from-[#fcf3fa] to-[#bba6da] z-[200]  px-10 py-2  rounded-[7px]">
+            Contact us
+          </a>
+
+        </div>
+      </div>
+      <div class="flex-1  z-[200]  flex justify-center items-center h-screen w-full"> 
+
+        <div class="video-container">
+          <video id="video" src="../images/video_amitmore638_02.mp4" class="rounded-md" ></video>
+          <div class="video-overlay cursor-pointer" id="overlay">
+            <i class="fa-solid fa-circle-play play-btn" id="playBtn"></i>
+          </div>
+      </div>
+    </div>
+</body>
+<script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+<script type="text/javascript">
+  var socket = io.connect("http://" + document.domain + ":5002");
+  var body = document.querySelector("body");
+  var listening2 = document.querySelector(".listening2");
+  var black_text = document.querySelectorAll(".black_text");
+  var hero_wrapper = document.querySelector(".hero_wrapper");
+  var login_btn = document.querySelector("#login_btn");
+  var bgGrad = document.querySelector("#bg-grad");
+  var listening = document.querySelector(".listening");
+  var bars = document.querySelectorAll(".bar");
+  var responseWrapper = document.querySelector(".response_wrapper");
+  window.onload = function () {
+    document
+      .getElementById("clearButton")
+      .addEventListener("click", function () {
+        document.getElementById("responseContainer").innerHTML = "";
+      });
+    document
+      .getElementById("sendMessageButton")
+      .addEventListener("click", function () {
+        var messageInput = document.getElementById("messageInput");
+        var message = messageInput.value;
+        if (message.trim() !== "") {
+          socket.emit("message_from_client", { message: message });
+          messageInput.value = "";
+        }
+      });
+  };
+
+  socket.on("response_from_server", function (data) {
+    console.log("Data received from server:", data);
+
+    var container = document.getElementById("responseContainer");
+
+    if (data.text) {
+      let paragraph = document.createElement("p");
+      paragraph.innerHTML = data.text;
+      container.appendChild(paragraph);
+    }
+
+    if (data.images && data.images.length > 0) {
+      data.images.forEach(function (imgBase64) {
+        let img = new Image();
+        img.src = `data:image/png;base64,${imgBase64}`;
+        img.alt = "Descriptive alternative text";
+        container.appendChild(img);
+      });
+    } else {
+      console.log("No images to display.");
+    }
+  });
+  const changer = document.getElementById("change");
+
+  function toggleTheme() {
+    const isLightTheme = localStorage.getItem("light_theme") === "true";
+
+    const newValue = !isLightTheme;
+
+    localStorage.setItem("light_theme", newValue);
+
+
+    console.log("Theme toggled");
+  }
+
+  changer.addEventListener("click", function () {
+    toggleTheme();
+  });
+
+
+
+  setInterval(() => {
+    if (bgGrad.classList.contains("from-white")) {
+      body.classList.add("change-background");
+      listening2.classList.add("change-color");
+      listening.classList.add("change-color");
+      bars.forEach(function (bar) {
+        bar.classList.add("bars_dark");
+      });
+      responseWrapper.classList.add("change-border");
+      black_text.forEach(function (item) {
+        item.classList.add("!text-black");
+      });
+      hero_wrapper.classList.remove("bg-[#6850883b]");
+      hero_wrapper.classList.add("bg-[#b1a4c33b]");
+    }
+    else {
+      hero_wrapper.classList.add("bg-[#6850883b]");
+      hero_wrapper.classList.remove("bg-[#b1a4c33b]");
+      body.classList.remove("change-background");
+      listening2.classList.remove("change-color");
+      listening.classList.remove("change-color");
+      bars.forEach(function (bar) {
+        bar.classList.remove("bars_dark");
+      });
+      responseWrapper.classList.remove("change-border");
+      black_text.forEach(function (item) {
+        item.classList.remove("!text-black");
+      });
+    }
+  }, 200);
+
+  const video = document.getElementById('video');
+    const overlay = document.getElementById('overlay');
+    const playBtn = document.getElementById('playBtn');
+
+    overlay.addEventListener('click', togglePlay);
+
+    video.addEventListener('click', togglePlay);
+
+    function togglePlay() {
+      if (video.paused) {
+        video.play();
+        overlay.style.display = 'none';
+      } else {
+        video.pause();
+        overlay.style.display = 'flex';
+      }
+    }
+
+</script>
+<script src="./index.js"></script>
+<script src="https://kit.fontawesome.com/241f9acf1b.js" crossorigin="anonymous"></script>
+
+</html>

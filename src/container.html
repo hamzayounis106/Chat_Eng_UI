@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hello Pete Interface</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne&display=swap">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body class="p-0 m-0">
+    <!-- Full body gradient bg  layer  -->
+    <!-- <div id="bg-grad"
+    class="w-full h-[100%] sm:h-screen fixed top-0 flex flex-col justify-evenly items-center text-center bg-gradient-to-r from-white to-blue-700 z-[200]">
+  </div> -->
+    <div id="bg-grad"
+        class=" transition-all duration-200 ease-in w-full h-[100%] sm:h-screen fixed top-0 flex flex-col justify-evenly items-center text-center bg-gradient-to-r from-[#39002B] to-[#0E041C] z-[200]  ">
+    </div>
+    <!-- everythung wrapper  -->
+    <div class="h-screen">
+        <!-- Header section -->
+        <header class="z-[400] relative flex justify-between items-center py-7 px-10 w-full">
+            <div class="left_side_header flex-1">
+                <ul class="flex text-yellow-50  gap-x-10  justify-start">
+                    <li
+                        class=" black_text hover:underline transition-all duration-300 cursor-pointer ease-in hover:scale-90">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li
+                        class=" black_text hover:underline transition-all duration-300 cursor-pointer ease-in hover:scale-90">
+                        <a href="./container.html">Container</a>
+                    </li>
+                    <li
+                        class=" black_text hover:underline transition-all duration-300 cursor-pointer ease-in hover:scale-90">
+                        <a href="./index.html#about">About</a></li>
+                    <li
+                        class=" black_text hover:underline transition-all duration-300 cursor-pointer ease-in hover:scale-90">
+                        Blog
+                    </li>
+                    <li
+                        class=" black_text hover:underline transition-all duration-300 cursor-pointer ease-in hover:scale-90">
+                        contact</li>
+                </ul>
+            </div>
+            <!-- <div class="flex-1 flex justify-center">
+        <img src="../images/helloPete.png"
+          class="max-w-[90px] w-full hover:underline transition-all duration-300 cursor-pointer ease-in hover:scale-90"
+          alt="">
+      </div> -->
+            <div class="flex-1 flex  justify-end">
+                <button id="login_btn"
+                    class="hover:scale-90 transition-transform duration-500 ease  bg-gradient-to-r from-[#c48db6] to-[#625377] text-yellow-50 px-6  font-medium rounded-md text-[17px] py-1 drop-shadow-2xl shadow-md shadow-[#685088]">Log
+                    in</button>
+            </div>
+        </header>
+        <div class=" h-[80vh] w-[100%] flex justify-center items-center  relative">
+            <div
+                class="m-0 p-0 absolute w-[98%] h-[98%] hero_wrapper bg-[#ffffff46] rounded-lg flex justify-center items-center  z-[1000]">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+
+
+</body>
+<script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+
+<script src="./index.js"></script>
+<script src="https://kit.fontawesome.com/241f9acf1b.js" crossorigin="anonymous"></script>
+
+</html>
